@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.custom.i18n.resources" value="global" />
+	<constant name="struts.multipart.maxSize" value="10485760" />
+	<constant name="struts.devMode" value="false" />
+
+	<package name="default" extends="struts-default" namespace="/">
+
+		<!-- Interceptor -->
+		<interceptors>
+			<interceptor name="interceptor"
+				class="com.uks.shubham.struts.common.db.logic.LoginInterceptor">
+			</interceptor>
+		</interceptors>
+
+		<action name="Login"
+			class="com.uks.shubham.struts.day2.a1.action.LoginAction">
+			<interceptor-ref name="interceptor" />
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- End of Interceptor -->
+
+		<!-- Default Location -->
+		<action name="">
+			<result>/day1/index.jsp</result>
+		</action>
+
+
+		<!-- Starting Day 1 config code -->
+		<action name="welcome"
+			class="com.uks.shubham.struts.day1.a1.action.WelcomeAction">
+			<result name="success">/day1/welcomeUser.jsp</result>
+			<result name="error">/day1/error.jsp</result>
+		</action>
+		<action name="logout"
+			class="com.uks.shubham.struts.day1.a1.action.WelcomeAction" method="logout">
+			<result name="success">/day1/index.jsp</result>
+		</action>
+		<!-- End of Day 1 config code -->
+
+
+
+
+
+		<!-- Starting Day 2-3 Config file -->
+		<action name="login"
+			class="com.uks.shubham.struts.day2.a1.action.WelcomeAction">
+			<result name="success">/day2/homepage.jsp</result>
+			<result name="user">/day2/details.jsp</result>
+			<result name="login">/day2/Login.jsp</result>
+		</action>
+
+		<action name="logout"
+			class="com.uks.shubham.struts.day1.a1.action.WelcomeAction" method="logout">
+			<result name="success">/day2/Login.jsp</result>
+		</action>
+		<action name="usernameInfo"
+			class="com.uks.shubham.struts.day1.a1.action.WelcomeAction" method="logout">
+			<result name="success">/day1/welcomeUser.jsp</result>
+		</action>
+		<!-- <action name="userInfo"
+			class="com.uks.shubham.struts.day2.a1.action.LoginAction">
+			<result name="success">/day2/success.jsp</result>
+			<result name="login">/day2/Login.jsp</result>
+		</action> -->
+		<action name="fileUpload"
+			class="com.uks.shubham.struts.day4.a1.action.WelcomeAction">
+			<result name="success">/day4/upload.jsp</result>
+		</action>
+
+		<action name="registeraction"
+			class="com.uks.shubham.struts.day2.a1.action.RegisterAction" >
+			<result name="success">/day2/UserAdded.jsp</result>
+			<result name="error">/day2/error.jsp</result>
+		</action>
+		<action name="userlistaction"
+			class="com.uks.shubham.struts.day2.a1.action.UserListAction">
+			<result name="success">/day2/Userlist.jsp</result>
+			<result name="error">/day2/error.jsp</result>
+		</action>
+
+		<!-- Edit Action -->
+		<action name="editaction" class="com.uks.shubham.struts.day2.a1.action.EditAction">
+            <result name="success">/day2/EditUser.jsp</result>
+        </action>
+		<!-- Update Action -->
+        <action name="updateaction" class="com.uks.shubham.struts.day2.a1.action.UpdateAction">
+            <result name="success">/day2/UpdateSuccess.jsp</result>
+            <result name="error">/day2/error.jsp</result>
+        </action>
+		<!-- User Details -->
+         <action name="detailaction" class="com.uks.shubham.struts.day2.a1.action.DetailAction">
+            <result name="success">/day2/detail.jsp</result>
+        </action>
+         <!-- normal User Details -->
+        <action name="userInfoOnly"
+			class="com.uks.shubham.struts.day2.a1.action.EditAction">
+			<result name="success">/day2/details.jsp</result>
+			<result name="login">/day2/Login.jsp</result>
+		</action>
+		<!-- Delete Action -->
+		<action name="deleteaction" class="com.uks.shubham.struts.day2.a1.action.DeleteAction">
+            <result name="success" type="chain" >userlistaction</result>
+        </action>
+		<!-- End of Day 2-3 Config file -->
+
+
+
+
+		<!-- Starting Day 4 Config file -->
+		<action name="uploadFile"
+			class="com.uks.shubham.struts.day4.a1.action.UploadAction">
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">image/jpeg,image/png,image/gif</param>
+				<param name="maximumSize">4194304</param>
+			</interceptor-ref>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="validation" />
+			<interceptor-ref name="workflow" />
+
+			<result name="success">/day4/uploadSuccess.jsp</result>
+			<result name="error">/day4/upload.jsp</result>
+		</action>
+		<!-- End of Day 4 Config file -->
+	</package>
+</struts>

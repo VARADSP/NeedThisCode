@@ -1,0 +1,109 @@
+@CHARSET "UTF-8";
+
+button {
+	padding: 10px 10px;
+	cursor: pointer;
+	color: Black;
+	background-color: #7955482e;
+	border-radius: 5px;
+	border: none;
+}
+
+button:hover {
+	background-color: #79554878;
+}
+
+button:active {
+	background-color: #79554878;
+	box-shadow: 0 2px #666;
+	transform: translateY(4px);
+}
+
+input[type=text], select {
+	width: fit-content;
+	padding: 5px 5px;
+	margin: 8px 0;
+	border-radius: 5px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+input[type=password], select {
+	width: fit-content;
+	padding: 5px 5px;
+	margin: 8px 0;
+	border-radius: 5px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+input[type=email], select {
+	width: fit-content;
+	padding: 5px 5px;
+	margin: 8px 0;
+	border-radius: 5px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+textarea {
+	width: fit-content;
+	border-radius: 5px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+input[type=date] {
+	width: fit-content;
+	padding: 5px 5px;
+	margin: 8px 0;
+	border-radius: 5px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.btnSize {
+	padding-left: 150px;
+}
+
+span {
+	color: red;
+}
+
+h2 {
+	border: 2px solid;
+	background-color: #1111114d;
+}
+
+div.main {
+	margin: auto;
+	width: 30%;
+	border: 3px solid #000000;
+	padding: 10px;
+	text-align: left;
+}
+
+updated
+.main {
+	border: 1px solid;
+	text-align: center;
+	width: 365px;
+	margin: 100px auto;
+}
+
+#demo {
+	color: red;
+}
+
+span {
+	color: red;
+}
+
+.details {
+	border: 1px solid;
+	margin: 100px auto;
+}
+
+.Editdet {
+	margin: 0 auto;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Details</title>
+<link rel="stylesheet" type="text/css" href="css/registrationPage.css">
+<script src="js/registrationPage.js"></script>
+</head>
+<body>
+		<center >
+				<form action="success.html" onsubmit="return check_checkbox()">
+				  <!-- outer div start -->
+				  <div id="outer" >
+					<br>
+					<!-- <label style="font-size:25px"><b>Registration Details</b></label> -->
+					
+					<!-- inner div start -->
+					<div id="inner" style="border: 1px solid black;">
+					  <br>
+					  <!-- personal details -->
+					  <!-- table start -->
+					  <table id="tab1" >
+						<thead>
+						  <th colspan="2" style="background-color: black">
+							<label style="color:white;float:left;">&nbsp&nbsp&nbspPersonal details&nbsp&nbsp&nbsp&nbsp</label>
+						  </th>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>
+							  <label>Salutation</label>
+							</td>
+							<td>
+							  <!-- datalist -->
+							  <select id="salutation" >
+								<option value="Mr.">Mr</option>
+								<option value="Ms.">Ms</option>
+								<option value="Mrs.">Mrs</option>
+							  </datalist>
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label>First Name<sup>*</sup> 
+							  </label>
+							</td>
+							<td>
+							  <input type="text" name="first_name" id="first_name" required="true" maxlength="50">
+							  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label>Middle Initial</label>
+							</td>
+							<td>
+							  <input type="text" name="middle_name" id="middle_name" maxlength="50">
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label>Last Name<sup>*</sup> 
+							  </label>
+							</td>
+							<td>
+							  <input type="text" name="last_name" id="last_name" required="true" maxlength="50">
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label>Sex <sup>*</sup>
+							  </label>
+							</td>
+							<td >
+							  <input type="radio" name="sex" required="true" value="Male"><label>Male</label>
+							<input type="radio" name="sex" required="true" value="Female"><label>Female</label></td>
+						  </tr>
+						  </tr>
+						  <tr>
+							<td>
+							  <label>Email&nbsp&nbsp<sup>*</sup></label>
+							</td>
+							<td>
+							  <input type="email" name="email" id="email" required="true" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address">
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label>Birth Date<sup>*</sup> 
+							  </label>
+							</td>
+							<td>
+							  <input type="date" name="bdate" id="birth_date" required="true" format="dd/mm/yyyy">
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label>Address</label>
+							</td>
+							<td>
+							  <textarea name="address" id="address" maxlength="100"></textarea>
+							</td>
+						  </tr>
+						</tbody>
+					  </table>
+					  <!-- table 1st end -->
+					  <!-- Areas of Interest  -->
+					  <table>
+						<thead>
+						  <th colspan="2" style="background-color: black">
+							<label style="color:white;float:left;">&nbsp&nbsp&nbspAreas of Interest</label>
+						  </th>
+						</thead>
+						<tbody>
+						  <tr>
+							<td style="color:white;float:left;"><input type="checkbox" name="language" value="Web Programming" >
+							  <label>Web Programming</label>
+							</td>
+						  </tr>
+						  <tr>
+						  <tr>
+							<td style="color:white;float:left;"><input type="checkbox" name="language" value="Database Programming">
+							  <label>Database Programming</label>
+							</td>
+						  </tr>
+						  <tr>
+							<td style="color:white;float:left;"><input type="checkbox" name="language" value="Swing Programming" >
+							  <label>Swing Programming</label>
+							</td>
+						  </tr>
+						  <tr>
+							<td style="color:white;float:left;"><input type="checkbox" name="language" value="Mobile Programming" >
+							  <label>Mobile Programming</label>
+							</td>
+						  </tr>
+						</tbody>
+					  </table>
+					  <table>
+						<thead>
+						  <th colspan="2" style="background-color: black"><label style="color:white;float:left;">Other Interest</label></th>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>
+							  <!-- perform eevnt drag and drop -->
+							  <ul ondrop="drop(event)" ondragover="allowDrop(event)" id="drop">
+								<li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag">c</li>
+								<li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag1">c++</li>
+								<li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag2">Java</li>
+								<li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag3">Ruby</li>
+								<li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag4">Rails</li>
+							  </ul>
+							</td>
+							<td>
+							  <ul ondrop="drop(event)" ondragover="allowDrop(event)" id="drop1">
+							  </ul>
+							</td>
+						  </tr>
+						</tbody>
+					  </table>
+					  <!-- table 2nd end -->
+					
+					<br>
+					<div style="text-align: center;border: none">
+					  <button type="submit" value="Login" class="button">submit</button>
+					  <!-- to clear all the values -->
+					  <button type="reset" name="Clear" value="Clear">Clear</button>
+					</div>
+				</div>
+				<!-- inner div end -->
+					<br>
+				  </div>
+				  <!-- outer div end -->
+				</form>
+			  </center>
+			  <!-- import external javascript -->
+  <script type="text/javascript" src="js/registrationPage.js"></script>
+</body>
+</html>

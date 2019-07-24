@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Validate</title>
+<link rel="stylesheet" href="LoginPage.css">
+
+<script>
+	function validateForm() {
+		var loginid = document.forms["myForm"]["LoginID"].value;
+		var password = document.forms["myForm"]["password"].value;
+
+		if (loginid == "") {
+			alert("Please enter username");
+			return false
+		}
+		else if ( password == "") {
+			alert("Please enter password");
+			return false
+		}
+	}
+</script>
+</head>
+<body>
+	<form name="myForm" onsubmit="return validateForm()" method="post">
+		<h1>Login Details</h1>
+		<table align="center">
+			<tr>
+				<td><label for="LoginID">LoginID</label></td>
+				<td><input type="text" name="LoginID"
+					placeholder="Enter LoginID"></td>
+			</tr>
+			<tr>
+				<td><label for=Password>Password</label></td>
+				<td><input type="text" name="password"
+					placeholder="Enter Password"></td>
+			</tr>
+			<tr>
+				<td><button type="submit" value="submit">Submit</button></td>
+				<td><button type="reset" value="reset">Clear</button></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

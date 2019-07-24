@@ -1,0 +1,12 @@
+/*for(int i = 0; i < empList.size(); i++){
+int element = Integer.parseInt(empList.get(i).empCode.trim());
+if(res[i] == element){
+	System.out.println("Search Elements");
+	//Printing all the employee information to console
+	System.out.println("EmployeeID:	 "+empList.get(i).empCode);							//emplList is return from RowReader in the form of arrayList of objects
+	System.out.println("  Name: 	"+empList.get(i).firstName+" "+empList.get(i).lastName); 	//using empl .(dot) we can access variables
+	System.out.println("  EmployeeType:	 "+empList.get(i).empType);
+	int sal = Integer.parseInt(empList.get(i).basicSalary.trim());	//converting string to int salary
+	System.out.println("  Salary:	 "+ (sal + (sal *0.125)));	//calculate total salary and print it
+}
+}*/

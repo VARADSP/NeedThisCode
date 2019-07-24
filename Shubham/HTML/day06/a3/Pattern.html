@@ -1,0 +1,33 @@
+<!DOCTYPE html utf-8>
+<html >
+<head>
+	<title>Canvas Pattern</title>
+   <meta http-equiv="Content-Type"content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+</head>
+<body>
+	<center> <h1>HTML5 Canvas Pattern</h1>
+<img src="pattern.jpg" id="lamp" width="32" height="32" hidden="">
+<canvas id="myCanvas" width="100" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</center>
+<script>
+
+        var canvas = document.getElementById("myCanvas");
+        var can = canvas.getContext("2d");
+      
+        var img = document.getElementById("lamp")
+        /*call after image is load*/
+        img.onload=function(){
+        /* create pattern*/
+        var pattren = can.createPattern(img, 'no-repeat');
+        /*create rectangle*/
+        can.rect(0, 0, 150, 100);
+        /*assign pattern to rectangle*/
+        can.fillStyle = pattren;
+        /* fill recangle with pattern*/
+        can.fill();
+         }
+      </script>
+</body>
+</html>

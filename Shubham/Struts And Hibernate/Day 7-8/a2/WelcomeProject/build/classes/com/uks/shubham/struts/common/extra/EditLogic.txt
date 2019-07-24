@@ -1,0 +1,29 @@
+/*
+ * if
+ * (uname.equalsIgnoreCase(items.get(0).getUserid().toString()))
+ * { //sessionMap.put("category",
+ * items.get(0).getCategory().toString());
+ * userData.setAddress(items.get(0).getAddress());
+ * userData.setAreaofinterest(items.get(0).getAreaofinterest());
+ * userData.setCategory(items.get(0).getCategory());
+ * userData.setDob(items.get(0).getDob().toString());
+ * userData.setEmailId(items.get(0).getEmailId());
+ * userData.setFirstName(items.get(0).getFirstName());
+ * userData.setGender(items.get(0).getGender());
+ * userData.setLastName(items.get(0).getLastName());
+ * userData.setMiddleName(items.get(0).getMiddleName());
+ * userData.setOtherinterest(items.get(0).getOtherinterest());
+ * userData.setPassword(items.get(0).getPassword());
+ * userData.setSalutation(items.get(0).getSalutation());
+ * userData.setUserid(items.get(0).getUserid());
+ *
+ *
+ * if(!userData.getAreaofinterest().isEmpty() ){ String[]
+ * arrTemp = userData.getAreaofinterest().split(",");
+ * userData.setArrTemp(arrTemp); }
+ *
+ *
+ *
+ *
+ * return userData; }
+ */

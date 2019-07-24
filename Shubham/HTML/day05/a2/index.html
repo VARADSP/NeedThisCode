@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="stylesheet.css">
+   </head>
+   <script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		</script>
+  <body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<header>
+		<h1><img src="img/applelogo.png"/>Indian Food Variety</h1>
+		<p>This the verious type of avaiable food in India and indian people like this food so much. This is easily available.</p>
+    </header>
+    <section class="section-content" id="section">
+      <article>
+		<h3 id="Chat">Indian Chat/ Street food</h3>
+		<img src="img/chat.jpg" alt="Notebook" class="img">
+		<p>This is the street food image</p>
+
+		<h3 id="fastfood">Fast food</h3>
+		<img src="img/fastfood.jpg" alt="Notebook" class="img">
+		<p>This is the Fast food image</p>
+
+		<h3 id="Gujurati">Indian Gujurati food</h3>
+		<img src="img/Gujurati.jpg" alt="Notebook" class="img">
+		<p>This is the Gujurati food image</p>
+
+		<h3 id="punjabi">Indian Punjabi food</h3>
+		<img src="img/punjabi.jpg" alt="Notebook" class="img">
+		<p>This is the Punjabi food image</p>
+
+		<h3 id="south">Indian South food</h3>
+		<img src="img/south.jpg" alt="Notebook" class="img">
+		<p>This is the South food image</p>
+
+		<h3 id="sweet">Indian sweet food</h3>
+		<img src="img/sweet.jpg" alt="Notebook" class="img">
+		<p>This is the sweet food image</p>
+      </article>
+    </section>
+    <aside class="section-content" id="aside">
+      <h2>Our Books</h2>
+      <p><a href="#chat">Chat</a></p>
+      <p><a href="#fastfood">fastfood</a></p>
+      <p><a href="#Gujurati">Gujurati</a></p>
+	  <p><a href="#punjabi">punjabi</a></p>
+	  <p><a href="#south">south</a></p>
+	  <p><a href="#sweet">sweet</a></p>
+    </aside>
+	<footer>
+      <h1>Unikaihatsu Software Pvt Ltd. Copyright © All rights reserved</h1>
+    </footer>
+  </body>
+</html>

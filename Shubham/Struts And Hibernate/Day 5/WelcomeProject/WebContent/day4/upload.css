@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+.main {
+	border: 1px solid #8888;
+	text-align: center;
+	width: 365px;
+	margin: 100px auto;
+	box-shadow: 3px 5px 16px 1px #888888;
+	padding: 50px;
+}
+
+.file {
+	padding-bottom: 20px;
+}

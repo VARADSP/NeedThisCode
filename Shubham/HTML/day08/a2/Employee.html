@@ -1,0 +1,43 @@
+<!DOCTYPE html utf-8>
+<html>
+<head>
+	<title>New Employee</title>
+	<meta http-equiv="Content-Type"content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/Employee.css">
+</head>
+<body>
+	<center>
+		<form id="myForm">
+		<!-- outer div start -->
+		<div id="outer">
+			<br><label>Employee Details</label><br><br>
+				  <label>&nbspName&nbsp&nbsp&nbsp:&nbsp</label>&nbsp<input type="text" id="name" required="true"><br><br>
+				  <label>&nbspPhone&nbsp&nbsp&nbsp:&nbsp</label>&nbsp<input type="text" id="mobile" required="true" maxlength="10"><br><br>
+				  <label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRole :&nbsp</label>&nbsp<input type="text" name=""  id="role" required="true"><br><br>
+				  <input type="submit"value="Submit" onclick="save()">&nbsp&nbsp&nbsp
+				  <!-- to clear all the values -->
+				  <input type="reset" name="Clear" value="Clear">
+            <br>
+            <br>
+       <br>
+     </div><!-- outer div end -->
+   </form>
+   <form id="myForm">
+		<!-- outer div start -->
+		<div id="outer">
+			<br><label>Show Employee Details</label><br><br>
+			 <label>&nbspName&nbsp&nbsp:&nbsp</label>&nbsp<input type="text" id="showName" readonly="true" ><br><br>
+				  <label>&nbspPhone&nbsp&nbsp&nbsp:&nbsp</label>&nbsp<input type="text" id="showMobile" readonly="true"><br><br>
+				  <label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRole :&nbsp</label>&nbsp<input type="text" name=""  id="showRole"  readonly="true"><br><br>
+				  <input type="button"value="Get Details" onclick="getDetails()">&nbsp&nbsp&nbsp
+				  <input type="button"value="Clear all Data" onclick="clearLocalStorage()">&nbsp&nbsp&nbsp
+         <br>
+         <br>
+       <br>
+     </div><!-- outer div end -->
+   </form>
+  </center>
+  <script type="text/javascript" src="js/addEmployee.js"></script>
+</body>
+</html>

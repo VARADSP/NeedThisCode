@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+    <h2>HTML5 Canvas Text and Fonts</h2>
+    <canvas id="myCanvas" width="250" height="250"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+</center>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+//font and color added to the Text
+ctx.font = "30px Arial";
+ctx.fillStyle = "blue";
+//Added text to the canvas
+ctx.strokeText("Hello World!",10,50);
+
+//font and color added to the Text
+ctx.font ="italic 30px Arial";
+ctx.fillStyle = "blue";
+//Added text to the canvas
+ctx.fillText("Hello World!",20,80);
+</script>
+
+</body>
+</html>
+    

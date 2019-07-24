@@ -1,0 +1,61 @@
+div{
+    /*set border to all div and lable also set padding*/
+      border: 1px solid black;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 5px;
+  }
+  div#inner
+  {
+      /* text align and width to inner div */
+      max-width: 300px;
+      text-align: center;
+  
+  }
+  div#outer
+  {
+      /* text align and width to outer div */
+      max-width: 300px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+  
+  }
+  
+  @media only screen 
+  and (max-width : 291px) {
+  /* if device size is low decrease size of input,textarea,label */
+   input,textarea{
+       width:100px;
+   }
+   label{
+       font-size:10px;
+   }
+  
+  }
+  body{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+      /* set padding to body */
+    padding: 30px; 
+  }
+  
+  h4,address,a,li,label{
+    color: black;
+  }
+  input[type=button],input[type=reset],input[type=submit]{
+    border-collapse: collapse;
+    border-radius: 5px;
+    border:0px;
+    width: 100px;
+    height:25px;
+    background-color:green;
+    color: white;
+  
+  }
+  input[type=text]{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height:25px;
+  }
+  

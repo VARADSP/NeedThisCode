@@ -1,0 +1,51 @@
+After User Login
+---------------------------
+Name : shubham Jain
+Role : admin
+Address : Bajaj Nagar
+City : Nanded
+Telephone : 1234567890
+Salary : 6000.0
+---------------------------
+
+List of all Employees , Manager(admin logins)
+
+---------------------------------------------------------------------------------------
+      EMP NAME USER ROLE                ADDRESS           CITY       TEL. NO.  SALARY
+---------------------------------------------------------------------------------------
+    sujit Jain|  manager|          Balaji Nagar|        Mumbai|    1515151515|  3600.0
+   shubhi Jain| employee|          Narhe katraj|          pune|    1000000001|  1800.0
+   sachin Jain|  manager|          Balaji Nagar|    Aurangabad|    7891234560|  3600.0
+      sam Jain| employee|        Sinddhi Colony|    Aurangabad|    4567891230|  2400.0
+  shubham Jain|    admin|           Bajaj Nagar|        Nanded|    1234567890|  6000.0
+---------------------------------------------------------------------------------------
+
+List of Managers only
+---------------------------------------------------------------------------------------
+      EMP NAME USER ROLE                ADDRESS           CITY       TEL. NO.  SALARY
+---------------------------------------------------------------------------------------
+    sujit Jain|  manager|          Balaji Nagar|        Mumbai|    1515151515|  3600.0
+   sachin Jain|  manager|          Balaji Nagar|    Aurangabad|    7891234560|  3600.0
+---------------------------------------------------------------------------------------
+
+List of Employees Only
+---------------------------------------------------------------------------------------
+      EMP NAME USER ROLE                ADDRESS           CITY       TEL. NO.  SALARY
+---------------------------------------------------------------------------------------
+   shubhi Jain| employee|          Narhe katraj|          pune|    1000000001|  1800.0
+      sam Jain| employee|        Sinddhi Colony|    Aurangabad|    4567891230|  2400.0
+---------------------------------------------------------------------------------------
+
+Searching employee with employee id 2
+---------------------------------------------------------------------------------------
+      EMP NAME USER ROLE                ADDRESS           CITY       TEL. NO.  SALARY
+---------------------------------------------------------------------------------------
+      sam Jain| employee|        Sinddhi Colony|    Aurangabad|    4567891230|  2400.0
+---------------------------------------------------------------------------------------
+
+Searching employee with employee name = sujit
+---------------------------------------------------------------------------------------
+      EMP NAME USER ROLE                ADDRESS           CITY       TEL. NO.  SALARY
+---------------------------------------------------------------------------------------
+    sujit Jain|  manager|          Balaji Nagar|        Mumbai|    1515151515|  3600.0
+---------------------------------------------------------------------------------------
